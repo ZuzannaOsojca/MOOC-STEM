@@ -50,6 +50,24 @@ width: 250px;
 padding: 10px 14px;
 background: var(--sidebar-color);
 }
+.sidebar li{
+ height: 50px;
+ margin-top: 10px;
+ list-style: none;
+ display: flex;
+ align-items: center;
+}
+.sidebar li .icon{
+  min-width: 60PX;
+  font-size: 20PX;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.sidebar li .icon,
+.sidebar li .text{
+color: var(--text-color);
+}
 .sidebar .image-text img{
   width: 40px;
   border-radius: 6px;
@@ -88,4 +106,11 @@ flex-direction: column;
   border-radius: 50%;
   color: var(--sidebar-color);
   font-size: 22px;
+}
+
+.sidebar li a{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
